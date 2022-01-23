@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' type='text/css' href='css/home.css'>
+	<link rel="shortcut icon" href="test-favicon.jpg" type="image/x-icon">
+	<title>{{ .Site.Title }}</title>
+</head>
+
+<body>
+	<header>
+		<h1>{{ .Site.Title }}</h1>
+		<div style="text-align: center; font-style: italic; font-size: 0.85em">Dimidium facti, qui coepit, habet; sapere
+			aude, incipe.
+		</div>
+	</header>
+	<section>
+		<div>
+			{{.Content}}
+		</div>
+	</section>
+	<div class="main">
+		<div>
+			<div class="classgroup" , id="1" , onclick="toggleText(1)">
+				<div class="grade1" , style="display: block;">G1–G4</div>
+				<div style="display:none" , class="more">
+					<div class="grade2">G1</div>
+					<div class="grade2">G2</div>
+					<div class="grade2">G3</div>
+					<div class="grade2">G4</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function toggleText(text_id) {
+			text_id = text_id.toString();
+			var parent = document.getElementById(text_id);
+			var nodes = parent.children;
+			var original;
+			var more;
+			for (let i = 0; i < nodes.length; i++) {
+				if (nodes[i].className === "grade1") {
+					original = nodes[i];
+				}
+				if (nodes[i].className === "more") {
+					more = nodes[i];
+				}
+			}
+			console.log(original);
+			if (original.style.display === "block") {
+				original.style.display = "none";
+				more.style.display = "block";
+			}
+		}
+	</script>
+</body>
+
+</html>

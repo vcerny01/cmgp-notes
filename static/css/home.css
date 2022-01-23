@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body {
+	color: rgb(245, 245, 245);
+	background: rgb(5, 5, 5);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	font-family: 'Noto Serif', serif;
+}
+
+header {
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.main {
+	margin-top: 2em;
+}
+
+.classgroup{
+	max-height: 200px;
+	max-width: 200px;
+	font-size: 1.20em;
+	border: solid rgb(192, 192, 192) 2px;
+}
+
+.classgroup:hover{
+	border: solid rgb(192, 192, 192) 3px;
+}
+
+.grade1 {
+	cursor: pointer;
+	background-color: rgb(20, 20, 20);
+	text-align: center;
+	padding: 50px;
+}
+
+.grade1:hover{
+	background-color: rgb(39, 39, 39);
+}
+
+.grade2 {
+	border-top: solid 1px rgb(192, 192, 192);
+	cursor: pointer;
+	background-color: rgb(20, 20, 20);
+	text-align: center;
+	padding: 10px;
+}

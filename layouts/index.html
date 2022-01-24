@@ -21,18 +21,24 @@
 			{{.Content}}
 		</div>
 	</section>
+
 	<div class="main">
-		<div>
-			<div class="gradesgroup" , id="1" , onclick="toggleText(1)">
-				<div class="gradesmin" , style="display: block;">G1–G4</div>
-				<div style="display:none" , class="allgrades">
-					<div class="grade">G1</div>
-					<div class="grade">G2</div>
-					<div class="grade">G3</div>
-					<div class="grade">G4</div>
-				</div>
+		{{$i := 0}}
+		{{range .Site.Data.grade }}
+		{{$i = add $i 1 }}
+
+		<div class="gradesgroup" , id="{{$i}}" , onclick="toggleText({{$i}})">
+			<div class="gradesmin" , style="display: block;">{{.name}}</div>
+			<div style="display:none;" , class="allgrades">
+				{{range .classes}}
+				<a href="/grades/{{lower .}}">
+					<div class="grade">{{ . }}</div>
+				</a>
+				{{end}}
 			</div>
 		</div>
+		{{end}}
+
 	</div>
 	<script>
 		function toggleText(text_id) {

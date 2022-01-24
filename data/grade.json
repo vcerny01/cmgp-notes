@@ -1,0 +1,38 @@
+[
+	{
+		"name": "G1–G4",
+		"classes": [
+			"G1",
+			"G2",
+			"G3",
+			"G4"
+		]
+	},
+	{
+		"name": "G5–G8",
+		"classes": [
+			"G5",
+			"G6",
+			"G7",
+			"G8"
+		]
+	},
+	{
+		"name": "PL",
+		"classes": [
+			"PL1",
+			"PL2",
+			"PL3",
+			"PL4"
+		]
+	},
+	{
+		"name": "PMP",
+		"classes": [
+			"PL1",
+			"PL2",
+			"PL3",
+			"PL4"
+		]
+	}
+]

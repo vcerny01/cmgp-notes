@@ -20,11 +20,24 @@ h1 {
 
 .main {
 	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main a {
+	color:rgb(245, 245, 245);
+	text-decoration: none;
 }
 
 .gradesgroup{
-	max-height: 200px;
-	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(20, 20, 20);
 	font-size: 1.20em;
 	border: solid rgb(192, 192, 192) 2px;
 }
@@ -34,10 +47,12 @@ h1 {
 }
 
 .gradesmin {
+	width: 200px;
+	height: 200px;
+	padding-top: 80px;
 	cursor: pointer;
 	background-color: rgb(20, 20, 20);
 	text-align: center;
-	padding: 50px;
 }
 
 .gradesmin:hover{
@@ -49,5 +64,9 @@ h1 {
 	cursor: pointer;
 	background-color: rgb(20, 20, 20);
 	text-align: center;
-	padding: 10px;
+	padding: 11px;
+}
+
+.grade:hover {
+	background-color: rgb(39, 39, 39);
 }

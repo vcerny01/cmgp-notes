@@ -29,10 +29,10 @@
 	{
 		"name": "PMP",
 		"classes": [
-			"PL1",
-			"PL2",
-			"PL3",
-			"PL4"
+			"PMP1",
+			"PMP2",
+			"PMP3",
+			"PMP4"
 		]
 	}
 ]

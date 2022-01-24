@@ -21,46 +21,19 @@
 			{{.Content}}
 		</div>
 	</section>
-
-	<div class="main">
-		{{$i := 0}}
-		{{range .Site.Data.grade }}
-		{{$i = add $i 1 }}
-
-		<div class="gradesgroup" , id="{{$i}}" , onclick="toggleText({{$i}})">
-			<div class="gradesmin" , style="display: block;">{{.name}}</div>
-			<div style="display:none;" , class="allgrades">
-				{{range .classes}}
-				<a href="/grades/{{lower .}}">
-					<div class="grade">{{ . }}</div>
-				</a>
-				{{end}}
-			</div>
+	<div class="container">
+		<!-- Clickable boxes with grade -->
+		{{partial "home/boxes-grades.html" . }}
+		<div class="column-info">
+			<ul>
+				<li>Přispějte svými poznámkami!</li>
+				<li>O této stránce</li>
+				<li>Zdroje pro samostudium</li>
+			</ul>
 		</div>
-		{{end}}
-
 	</div>
-	<script>
-		function toggleText(text_id) {
-			text_id = text_id.toString();
-			var parent = document.getElementById(text_id);
-			var nodes = parent.children;
-			var gradesmin;
-			var allgrades;
-			for (let i = 0; i < nodes.length; i++) {
-				if (nodes[i].className === "gradesmin") {
-					gradesmin = nodes[i];
-				}
-				if (nodes[i].className === "allgrades") {
-					allgrades = nodes[i];
-				}
-			}
-			if (gradesmin.style.display === "block") {
-				gradesmin.style.display = "none";
-				allgrades.style.display = "block";
-			}
-		}
-	</script>
+
+	{{partial "home/box-toggle-text.html" . }}
 </body>
 
 </html>

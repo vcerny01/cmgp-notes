@@ -12,21 +12,56 @@ body {
 
 header {
 	margin: 10px;
+	margin-bottom: 100px;
 }
 
 h1 {
 	text-align: center;
 }
 
-.main {
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.column {
+	min-height: 100%;
+	max-width: 600px;
+	flex-direction: row;
 	margin-top: 2em;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.main a {
+.column-info{
+	min-height: 100%;
+	max-width: 300px;
+	flex-direction: row;
+	margin-top: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-left: 1px solid white; 
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.column-info li {
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.column-info{
+		border-left: none;
+		border-top: 1px solid white;
+	}
+
+}
+
+.column a {
 	color:rgb(245, 245, 245);
 	text-decoration: none;
 }

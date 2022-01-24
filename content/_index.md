@@ -2,4 +2,4 @@
 layout: index
 ---
 
-test, DIY
+Poznámky z následujících ročníků:

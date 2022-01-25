@@ -1,24 +1,13 @@
-TODO Dokončit přesný plán
-
-TODO Sestavit základní tým
-
-TODO Začít pracovat na backendu
-
 # Cmgp Notes
 
-## Vize
+UNDER DEVELOPMENT!
 
-- Vytvořit prostor na webu pro studenty naší školy pro prohlížení poznámek ostatních
-- Poznámky organizované podle rámcových vzdělávacích plánů
-- Poznámky na webu v HTML (žádné stahování souborů, ale lehce manipulovatelný a přístupný text)
+Stránky pro sdílení poznámek na CMGP. Tvořeny se statickým generátorem [Hugo](https://gohugo.io/).
 
-## Plán
+## Fungování
 
-### Backend
+Organizace poznámek by měla být flexibilní.
 
-- Hostování pro začátek stačí třeba na Rapsberry Pi
-- Psán v ~~Clojure~~ Typescriptu (framework??)
+Jednotlivé poznámky jsou vázány k tématům, témata jsou vázany k předmětům v rámci ročníků.
 
-### Frontend
-
-- Typescript v Reactu?
+Vše je generováno staticky.

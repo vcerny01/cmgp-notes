@@ -3,6 +3,7 @@ languageCode: cs-cz
 title: Cmgp Notes
 defaultContentLanguage: cz
 enableEmoji: true
-
 params:
   description: Sdílení poznámek a zdrojů
+taxonomies:
+  topic: topics

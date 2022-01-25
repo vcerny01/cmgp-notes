@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/note.css">
+	{{ partial "favicon.html" . }}
+	<title>{{.Params.title}}</title>
+</head>
+
+<body>
+	<header>
+		<h1>{{.Params.title}}</h1>
+	</header>
+	<article>
+		{{.Content}}
+	</article>
+</body>
+
+</html>

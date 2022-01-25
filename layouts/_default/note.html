@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/note.css">
+	{{ partial "favicon.html" . }}
+	<title>{{.Params.title}}</title>
+</head>
+
+<body>
+	<header>
+		<h1>{{.Params.title}}</h1>
+	</header>
+	<div class="meta-container">
+		<div class="meta">
+			<!-- Metadata o poznámce samotné-->
+			<div><span>Napsal:</span> {{.Params.author}}</div>
+			<div><span>Přidáno:</span> {{ .Date.Format "2.1. 2006"}}</div>
+			<div><span>Témata:</span></div>
+		</div>
+		<div class="toc">
+			{{.TableOfContents}}
+		</div>
+	</div>
+	<article>
+		{{.Content}}
+	</article>
+</body>
+
+</html>

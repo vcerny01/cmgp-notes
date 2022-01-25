@@ -1,8 +1,16 @@
+:root {
+	--bg-color: rgb(15,15,15);
+	--secondary-bg-color: rgb(25, 25, 25);
+	--hover-bg-color: rgb(42, 42, 42);
+	--color: rgb(245, 245, 245);
+	--border-color: rgb(192, 192, 192)
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 body {
-	color: rgb(245, 245, 245);
-	background: rgb(5, 5, 5);
+	color: var(--color);
+	background: var(--bg-color);
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -44,7 +52,8 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	border-left: 1px solid white; 
+	border-radius: 2px;
+	border-left: 2px solid var(--border-color); 
 	padding-left: 30px;
 	padding-top: 10px;
 }
@@ -56,13 +65,13 @@ h1 {
 @media only screen and (max-width: 900px) {
 	.column-info{
 		border-left: none;
-		border-top: 1px solid white;
+		border-top: 1px solid var(--border-color);
 	}
 
 }
 
 .column a {
-	color:rgb(245, 245, 245);
+	color: var(--color);
 	text-decoration: none;
 }
 
@@ -72,13 +81,13 @@ h1 {
 	margin: 1em;
 	width: 200px;
 	height: 200px;
-	background-color: rgb(20, 20, 20);
 	font-size: 1.20em;
-	border: solid rgb(192, 192, 192) 2px;
+	border: solid var(--border-color) 2px;
+	border-radius: 1.5%;
 }
 
 .gradesgroup:hover{
-	border: solid rgb(192, 192, 192) 3px;
+	border: solid var(--border-color) 3px;
 }
 
 .gradesmin {
@@ -86,22 +95,22 @@ h1 {
 	height: 200px;
 	padding-top: 80px;
 	cursor: pointer;
-	background-color: rgb(20, 20, 20);
+	background-color: var(--secondary-bg-color);
 	text-align: center;
 }
 
 .gradesmin:hover{
-	background-color: rgb(39, 39, 39);
+	background-color: var(--hover-bg-color);
 }
 
 .grade {
-	border-top: solid 1px rgb(192, 192, 192);
+	border-top: solid 1px var(--border-color);
 	cursor: pointer;
-	background-color: rgb(20, 20, 20);
+	background-color: var(--secondary-bg-color);
 	text-align: center;
 	padding: 11px;
 }
 
 .grade:hover {
-	background-color: rgb(39, 39, 39);
+	background-color: var(--hover-bg-color);
 }

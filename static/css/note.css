@@ -1,0 +1,100 @@
+:root {
+	--bg-color: rgb(15,15,15);
+	--secondary-bg-color: rgb(25, 25, 25);
+	--hover-bg-color: rgb(42, 42, 42);
+	--color: rgb(245, 245, 245);
+	--border-color: rgb(192, 192, 192)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body {
+	color: var(--color);
+	background: var(--bg-color);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	font-family: 'Noto Serif', serif;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.meta-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+
+.meta{
+	padding: 15px;
+	border-top: 3px var(--secondary-bg-color) solid;
+	border-bottom: 3px var(--secondary-bg-color) solid;
+	min-width: 150px;
+	margin: 10px;
+	border-radius: 1%;
+	height: fit-content;
+}
+
+.toc {
+	border-radius: 2%;
+	background-color: var(--secondary-bg-color);
+	margin: 10px;
+	padding: 10px 70px 10px;
+	padding-left: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-width: 150px;
+	width: fit-content;
+}
+
+.toc li {
+	padding-bottom: 3px;
+	padding-left: none;
+	margin: none;
+	display: box;
+
+}
+
+span {
+	font-size: 0.90em;
+}
+
+.toc li a {
+	text-decoration: none;
+}
+
+
+a:link,a:visited{
+	color:rgb(0, 155, 226);
+	background-color:transparent;
+	text-decoration:underline;
+}
+	
+a:hover{
+	color:red;background-color:transparent;text-decoration:underline;
+}
+
+a:active{
+	color:#6f3;
+	background-color:transparent;text-decoration:underline;
+}
+
+article {
+	max-width: 900px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+	.meta {
+		border: none;
+	}
+	.toc {
+		margin-left: 0px;
+	}	
+}

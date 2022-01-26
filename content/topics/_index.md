@@ -1,5 +1,6 @@
 ---
 title: Témata
+layout: note-index
 ---
 
-Tato stránka obsahuje přehled všech témat:
+Index všech témat:

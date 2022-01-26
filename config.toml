@@ -6,3 +6,4 @@ defaultContentLanguage = "cz"
   description = "Sdílení poznámek a zdrojů ke studiu"
 [taxonomies]
   topic = "topics"
+  author = "authors"

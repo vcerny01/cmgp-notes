@@ -2,4 +2,4 @@
 title: Témata
 ---
 
-Tato stránka obsahuje přehled všech témat.
+Tato stránka obsahuje přehled všech témat:

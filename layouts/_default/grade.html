@@ -9,17 +9,11 @@
 	{{ partial "favicon.html" . }}
 	<title>{{.Params.title}}</title>
 </head>
-<header>
-	<h1>{{ .Data.Singular }}: {{.Params.title }} </h1>
-</header>
 
 <body>
-	<div class="summary">{{ .Content }}</div>
-	<div>
-		<ul class="thelist">
-			{{ range .Data.Pages }}
-			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-			{{ end }}
-		</ul>
-	</div>
+	<header>
+		<h1>{{.Params.title}}</h1>
+	</header>
 </body>
+
+</html>

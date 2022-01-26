@@ -17,9 +17,11 @@
 	<div class="meta-container">
 		<div class="meta">
 			<!-- Metadata o poznámce samotné-->
-			<div><span>Napsal:</span> {{.Params.author}}</div>
+			<div><span>Napsal:</span>{{range .Params.authors}} <a href="/authors/{{ . | urlize}}">{{.}}</a>
+				{{end}} </div>
 			<div><span>Přidáno:</span> {{ .Date.Format "2.1. 2006"}}</div>
-			<div><span>Témata:</span>{{range .Params.topics }} <a href="/topics/{{lower .}}">{{.}}</a>{{end}}</div>
+			<div><span>Témata:</span>{{range .Params.topics }} <a href="/topics/{{ . | urlize}}">{{.}}</a>{{end}}
+			</div>
 		</div>
 		<div class="toc">
 			{{.TableOfContents}}

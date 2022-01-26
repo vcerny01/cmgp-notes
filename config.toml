@@ -1,0 +1,8 @@
+baseUrl = "https://cmgpnotes.cz"
+languageCode = "cs-cz"
+title = "Cmgp Notes"
+defaultContentLanguage = "cz"
+[params]
+  description = "Sdílení poznámek a zdrojů ke studiu"
+[taxonomies]
+  topic = "topics"

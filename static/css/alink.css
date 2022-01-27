@@ -1,7 +1,7 @@
-a:link,a:visited{
+a:link, a:visited{
 	color:rgb(0, 155, 226);
 	background-color:transparent;
-	text-decoration:underline;
+	text-decoration:none;
 }
 	
 a:hover{
@@ -11,5 +11,5 @@ a:hover{
 
 a:active{
 	color:#6f3;
-	background-color:transparent;text-decoration:underline;
+	background-color:transparent;text-decoration:none;
 }

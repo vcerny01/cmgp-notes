@@ -1,0 +1,63 @@
+{
+	"grade": "G5",
+	"subjects": [
+		{
+			"subject": "Angličtina",
+			"topics": []
+		},
+		{
+			"subject": "Biologie",
+			"topics": []
+		},
+		{
+			"subject": "Český jazyk",
+			"topics": []
+		},
+		{
+			"subject": "Dějepis",
+			"topics": [
+				"Pravěk",
+				"Starověk",
+				"Antika",
+				"Ranný středověk",
+				"Vrcholný středověk"
+			]
+		},
+		{
+			"subject": "Fyzika",
+			"topics": []
+		},
+		{
+			"subject": "Chemie",
+			"topics": []
+		},
+		{
+			"subject": "Informatika",
+			"topics": []
+		},
+		{
+			"subject": "Křesťanská výchova",
+			"topics": []
+		},
+		{
+			"subject": "Matematika",
+			"topics": []
+		},
+		{
+			"subject": "Německý jazyk",
+			"topics": []
+		},
+		{
+			"subject": "Francouzský jazyk",
+			"topics": []
+		},
+		{
+			"subject": "Zeměpis",
+			"topics": []
+		},
+		{
+			"subject": "Základy společenských věd",
+			"topics": []
+		}
+	]
+}

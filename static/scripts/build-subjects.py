@@ -43,7 +43,7 @@ for filename in ALL_JSON:
             template_dict = {
                 "[[grade]]": grade_name,
                 "[[subject]]": subject["subject"],
-                "[[filename]]": filename.replace(".json", ""),
+                # "[[filename]]": filename.replace(".json", ""),
                 "[[layout]]": HTML_LAYOUT,
                 "[[subject-lower]]": subject["subject"].lower()
             }
@@ -58,13 +58,13 @@ for filename in ALL_JSON:
         template_dict = {
             "[[layout]]": "subject",
             "[[grade]]": grade_name,
-            "[[summary]]": "Přehled všech předmětů k ročníku:" + grade_name
+            "[[summary]]": "Přehled všech předmětů k ročníku " + grade_name + ":"
         }
         markdown = replace_with_dict(markdown, template_dict)
         for subject in data["subjects"]:
             subject_name = subject["subject"]
             markdown += "\n" + "- [" + subject_name + "]" + \
-                "(" + "/grades/" + "/" + urlize(grade_name) + \
+                "(" + "/grades/" + urlize(grade_name) + \
                 "/" + urlize(subject_name) + ")"
         file.write(markdown)
 
@@ -75,7 +75,7 @@ with open(os.path.join(GRADES_DIR, "_index.md"), "w") as file:
     template_dict = {
         "[[layout]]": "subject",
         "[[grade]]": "Ročníky",
-        "[[summary]]": "\"Přehled všech ročníků:\""
+        "[[summary]]": "Přehled všech ročníků:"
     }
     markdown = replace_with_dict(markdown, template_dict)
     for filename in ALL_JSON:

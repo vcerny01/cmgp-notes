@@ -1,5 +1,5 @@
 ---
 layout: [[layout]]
 title: [[grade]]
-summary: [[summary]]
+summary: "[[summary]]"
 ---

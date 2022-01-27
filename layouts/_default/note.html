@@ -22,6 +22,10 @@
 			<div><span>Přidáno:</span> {{ .Date.Format "2.1. 2006"}}</div>
 			<div><span>Témata:</span>{{range .Params.topics }} <a href="/topics/{{ . | urlize}}">{{.}}</a>{{end}}
 			</div>
+			<div><span>Učitelé:</span>{{range .Params.teachers }} <a href="/teachers/{{ . | urlize}}">{{.}}</a>{{end}}
+			</div>
+			<div><span>Pro ročníky: </span>{{range .Params.grades}}<a href="/grades/{{. | urlize}}">{{.}}</a>{{end}}
+			</div>
 		</div>
 		<div class="toc">
 			{{.TableOfContents}}

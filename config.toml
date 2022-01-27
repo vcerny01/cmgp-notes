@@ -7,3 +7,5 @@ defaultContentLanguage = "cz"
 [taxonomies]
   topic = "topics"
   author = "authors"
+  grade = "grades"
+  teacher = "teachers"

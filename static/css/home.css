@@ -18,11 +18,10 @@
 .column-info{
 	min-height: 100%;
 	max-width: 300px;
-	flex-direction: row;
 	margin-top: 2em;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	justify-content:flex-start;
+	flex-wrap: nowrap;
+	flex-direction: unset;
 	border-radius: 2px;
 	border-left: 2px solid var(--border-color); 
 	padding-left: 30px;

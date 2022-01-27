@@ -19,18 +19,14 @@
 	</header>
 	<section>
 		<div>
-			{{.Content}}
+			Poznámky pro <a href="https://cmgp.cz">CMGP</a> z následujících ročníků
 		</div>
 	</section>
 	<div class="container">
 		<!-- Clickable boxes with grade -->
 		{{partial "home/boxes-grades.html" . }}
 		<div class="column-info">
-			<ul>
-				<li>Přispějte svými poznámkami!</li>
-				<li>O této stránce</li>
-				<li>Zdroje pro samostudium</li>
-			</ul>
+			{{.Content}}
 		</div>
 	</div>
 

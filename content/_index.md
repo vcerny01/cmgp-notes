@@ -2,4 +2,14 @@
 layout: index
 ---
 
-Poznámky z následujících ročníků:
+### FAQ
+
+- O této stránce
+- **Přispějte svými poznámkami**
+- Zdroje pro samostudium
+
+### Meta
+
+- Všechna témata
+
+- Všechny poznámky

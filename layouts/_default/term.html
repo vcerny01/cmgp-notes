@@ -9,8 +9,9 @@
 	{{ partial "favicon.html" . }}
 	<title>{{.Params.title}}</title>
 </head>
+
 <header>
-	<h1><a style="color: gray; text-decoration:underline hover" href="/{{.Data.Plural | urlize}}">{{
+	<h1><a style="color:gray; text-decoration: underline hover" href="/{{.Data.Plural | urlize}}">{{
 			.Data.Singular }}:</a>
 		{{.Params.title }}
 	</h1>
@@ -21,7 +22,12 @@
 	<div>
 		<ul class="thelist">
 			{{ range .Data.Pages }}
-			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				{{range .Params.grades}} <a style="color:gray; text-decoration: underline hover"
+					href="/grades/{{ . | urlize}}">{{.}}</a>{{end}}
+				{{range .Params.teachers}} <a style="color: gray; text-decoration underline hover"
+					href="/teachers/{{. | urlize}}">{{.}}</a>{{end}}
+			</li>
 			{{ end }}
 		</ul>
 	</div>

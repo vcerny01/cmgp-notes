@@ -9,6 +9,8 @@ topics:
 - Starověk
 grades:
 - G5
+- G6
+math: true
 teachers:
 - Marek Štěpánek
 ---
@@ -18,6 +20,7 @@ teachers:
 	- Aeneas uprchl z Tróje
 	- Romulus a Remus
 - 753 - vznik Říma
+- $\frac{20}{3x}$
 - pravděpodobně vznikal postupně
 - po odvodnění oblasti Etrusky období rozmachu
 

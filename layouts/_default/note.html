@@ -33,7 +33,7 @@
 			</div>
 			<div><span>Učitelé:</span>{{range .Params.teachers }} <a href="/teachers/{{ . | urlize}}">{{.}}</a>{{end}}
 			</div>
-			<div><span>Pro ročníky: </span>{{range .Params.grades}}<a href="/grades/{{. | urlize}}">{{.}}</a>{{end}}
+			<div><span>Pro ročníky: </span>{{range .Params.grades}} <a href="/grades/{{. | urlize}}">{{.}}</a>{{end}}
 			</div>
 		</div>
 		<div class="toc">

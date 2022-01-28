@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{partial "default-style.html" .}}
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+    {{ partial "favicon.html" . }}
+    {{if .Params.math}}
+    {{partial "notes/math.html" .}}
+    {{end}}
+    <title>{{.Params.title}}</title>
+</head>
+<style>
+</style>
+
+<body>
+    <header>
+        <h1>{{.Params.title}}</h1>
+    </header>
+    <article>
+        {{.Content}}
+    </article>
+</body>
+
+</html>

@@ -1,11 +1,12 @@
 .meta-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
 	margin-bottom: 50px;
 }
 
-.meta{         
+.meta{
 	height: fit-content;
 	border-top: 3px var(--secondary-bg-color) solid;
 	border-bottom: 3px var(--secondary-bg-color) solid;
@@ -48,7 +49,7 @@ article {
 	margin: auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
 	.meta {
 		border: none;
 	}

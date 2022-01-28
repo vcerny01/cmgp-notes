@@ -19,9 +19,6 @@
 	min-height: 100%;
 	max-width: 300px;
 	margin-top: 2em;
-	justify-content:flex-start;
-	flex-wrap: nowrap;
-	flex-direction: unset;
 	border-radius: 2px;
 	border-left: 2px solid var(--border-color); 
 	padding-left: 30px;
@@ -32,7 +29,7 @@
 	padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 925px) {
 	.column-info{
 		border-left: none;
 		border-top: 1px solid var(--border-color);

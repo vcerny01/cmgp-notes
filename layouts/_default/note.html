@@ -7,8 +7,17 @@
 	{{partial "default-style.html" .}}
 	<link rel="stylesheet" type="text/css" href="/css/note.css">
 	{{ partial "favicon.html" . }}
+	{{if .Params.math}}
+	{{partial "notes/math.html" .}}
+	{{end}}
 	<title>{{.Params.title}}</title>
 </head>
+<style>
+	.katex {
+		font-size: 3em;
+		 !important
+	}
+</style>
 
 <body>
 	<header>
@@ -34,6 +43,6 @@
 	<article>
 		{{.Content}}
 	</article>
-</body>
+</body>>
 
 </html>

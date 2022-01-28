@@ -11,5 +11,4 @@ layout: index
 ### Meta
 
 - Všechna témata
-
 - Všechny poznámky

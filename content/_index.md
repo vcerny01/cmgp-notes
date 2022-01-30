@@ -4,11 +4,12 @@ layout: index
 
 ### FAQ
 
-- O této stránce
-- **Přispějte svými poznámkami**
-- Zdroje pro samostudium
+- [O této stránce](/about/)
+- **[Přispějte svými poznámkami](/about/zapojte-se)**
+- Zdroje pro [samostudium](/about/samostudium)
 
 ### Meta
 
-- Všechna témata
-- Všechny poznámky
+- Všechna [témata](/topics)
+- Všechny [poznámky](/notes)
+- Všichni [učitelé](/teachers)

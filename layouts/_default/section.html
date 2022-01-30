@@ -16,7 +16,8 @@
 <body>
 	<div class="summary">{{ .Content }}</div>
 	<div>
-		<ul class="thelist">
+		{{partial "partials/list-filter.html" .}}
+		<ul class="thelist" id="listToFilter">
 			{{ range .Paginator.Pages }}
 			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{ end }}

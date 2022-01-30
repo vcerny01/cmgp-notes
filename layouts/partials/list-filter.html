@@ -1,0 +1,22 @@
+<div class="filter-field">
+    <input type="text" id="filter" onkeyup="filterUl()" , placeholder="filtr">
+    <script defer>
+        function filterUl() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("filter");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("listToFilter");
+            li = ul.getElementsByTagName("li");
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</div>

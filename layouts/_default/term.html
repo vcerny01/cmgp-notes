@@ -20,7 +20,8 @@
 <body>
 	<div class="summary">{{ .Content }}</div>
 	<div>
-		<ul class="thelist">
+		{{partial "partials/list-filter.html" .}}
+		<ul class="thelist" id="listToFilter">
 			{{ range .Data.Pages }}
 			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
 				{{range .Params.grades}} <a style="color:gray; text-decoration: underline hover"

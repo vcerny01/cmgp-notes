@@ -6,6 +6,58 @@ body {
 	margin-bottom: 1em;
 }
 
-.thelist {
+#listToFilter {
 	padding-right: 1em;
+	list-style-type: none;
+	max-width: 500px;
+	border-radius: 0% 10% 10% 0%;
+}
+
+#filter {
+	display: block;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+	font-size: 0.9rem;
+	color: inherit;
+	background-color: inherit;
+	border: 0px;
+	border-bottom: 2.5px solid var(--border-color);
+}
+
+#filter:focus {
+	outline: none;
+}
+
+#listToFilter li {
+	display: block;
+	max-width: 200px;
+	padding: 7px;
+	border-left: 2px solid rgb(150, 150, 150);
+	margin-top: -2px;
+	color: var(--light-link-color);
+	background-color: var(--secondary-bg-color);
+}
+
+#listToFilter li:hover{
+	background-color: var(--hover-bg-color);
+	/* padding: 6px 5px 6px; */
+	cursor:pointer;
+	border-left-color: var(--light-link-color);
+}
+
+span {
+	color: var(--light-link-color);
+}
+
+#listToFilter li:hover span{
+	color: var(--link-color);
+}
+
+#listToFilter li:active span{
+	color: var(--link-hover-color);
+}
+
+#listToFilter a {
+	color: inherit;
+	text-decoration: none;
 }

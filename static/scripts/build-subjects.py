@@ -1,3 +1,6 @@
+# TODO clean this script
+# TODO maybe you don't need this script at all, stuff can be dealt with using archetypes
+
 import os
 import json
 from re import template
@@ -43,43 +46,45 @@ for filename in ALL_JSON:
             template_dict = {
                 "[[grade]]": grade_name,
                 "[[subject]]": subject["subject"],
-                # "[[filename]]": filename.replace(".json", ""),
+                "[[jsonfile]]": filename.replace(".json", ""),
                 "[[layout]]": HTML_LAYOUT,
                 "[[subject-lower]]": subject["subject"].lower()
             }
             markdown = replace_with_dict(markdown, template_dict)
-            for topic in subject["topics"]:
-                markdown += "\n" + "- [" + topic + "]" + \
-                    "(" + "/topics/" + urlize(topic) + ")"
+            # for topic in subject["topics"]:
+            #     markdown += "\n" + "- [" + topic + "]" + \
+            #         "(" + "/topics/" + urlize(topic) + ")"
             file.write(markdown)
     with open(os.path.join(GRADES_DIR, grade_dir, "_index.md"), "w") as file:
         # create index file for each grade
         markdown = TEMPLATE_INDEX
         template_dict = {
-            "[[layout]]": "subject",
+            "[[layout]]": "grade",
             "[[grade]]": grade_name,
-            "[[summary]]": "Přehled všech předmětů k ročníku " + grade_name + ":"
+            "[[jsonfile]]": filename.replace(".json", ""),
+            "[[summary]]": "Přehled všech předmětů k ročníku " + grade_name + ":",
         }
         markdown = replace_with_dict(markdown, template_dict)
-        for subject in data["subjects"]:
-            subject_name = subject["subject"]
-            markdown += "\n" + "- [" + subject_name + "]" + \
-                "(" + "/grades/" + urlize(grade_name) + \
-                "/" + urlize(subject_name) + ")"
+        # for subject in data["subjects"]:
+        #     subject_name = subject["subject"]
+        #     markdown += "\n" + "- [" + subject_name + "]" + \
+        #         "(" + "/grades/" + urlize(grade_name) + \
+        #         "/" + urlize(subject_name) + ")"
         file.write(markdown)
 
 
-with open(os.path.join(GRADES_DIR, "_index.md"), "w") as file:
-    # create index for all grades
-    markdown = TEMPLATE_INDEX
-    template_dict = {
-        "[[layout]]": "subject",
-        "[[grade]]": "Ročníky",
-        "[[summary]]": "Přehled všech ročníků:"
-    }
-    markdown = replace_with_dict(markdown, template_dict)
-    for filename in ALL_JSON:
-        filename = filename.replace(".json", "")
-        markdown += "\n" + "- [" + filename.upper() + "]" + \
-                    "(" + "/grades/" + urlize(filename) + ")"
-    file.write(markdown)
+# with open(os.path.join(GRADES_DIR, "_index.md"), "w") as file:
+#     # create index for all grades
+#     markdown = TEMPLATE_INDEX
+#     template_dict = {
+#         "[[layout]]": "about",
+#         "[[grade]]": "Ročníky",
+#         "[[summary]]": "Přehled všech ročníků:"
+#     }
+#     markdown = replace_with_dict(markdown, template_dict)
+
+#     # for filename in ALL_JSON:
+#     #     filename = filename.replace(".json", "")
+#     #     markdown += "\n" + "- [" + filename.upper() + "]" + \
+#     #                 "(" + "/grades/" + urlize(filename) + ")"
+#     file.write(markdown)

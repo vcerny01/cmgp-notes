@@ -19,7 +19,9 @@
 		{{partial "partials/list-filter.html" .}}
 		<ul class="thelist" id="listToFilter">
 			{{ range .Paginator.Pages }}
-			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			<a href="{{ .RelPermalink }}">
+				<li><span>{{ .Title }}</span></li>
+			</a>
 			{{ end }}
 		</ul>
 	</div>

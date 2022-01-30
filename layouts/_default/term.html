@@ -21,14 +21,14 @@
 	<div class="summary">{{ .Content }}</div>
 	<div>
 		{{partial "partials/list-filter.html" .}}
-		<ul class="thelist" id="listToFilter">
+		<ul id="listToFilter">
 			{{ range .Data.Pages }}
-			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
-				{{range .Params.grades}} <a style="color:gray; text-decoration: underline hover"
-					href="/grades/{{ . | urlize}}">{{.}}</a>{{end}}
-				{{range .Params.teachers}} <a style="color: gray; text-decoration underline hover"
-					href="/teachers/{{. | urlize}}">{{.}}</a>{{end}}
-			</li>
+			<a href="{{ .RelPermalink }}">
+				<li><span>{{ .Title }}</span>
+					<span style="color:gray">{{range .Params.grades}} {{.}}{{end}}</span>
+					{{range .Params.teachers}} <span style="display:none">{{.}}</span>{{end}}
+				</li>
+			</a>
 			{{ end }}
 		</ul>
 	</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{partial "default-style.html" .}}
+    <link rel="stylesheet" type="text/css" href="/css/list.css">
+    {{ partial "favicon.html" . }}
+    <title>{{.Params.title}}</title>
+</head>
+
+<body>
+    <header>
+        <h1>{{.Params.title}}</h1>
+    </header>
+    <div class="summary">
+        {{.Params.summary}}
+    </div>
+    <div id="listToFilter">
+        {{range $elem_key, $elem_val := .Site.Data.subjects}}
+        {{if eq (trim $elem_key " ") (trim $.Params.jsonfile " ")}}
+        {{range $ek, $ev := .}}
+        {{if eq $ek "subjects"}}
+        {{range $ek, $ev := .}}
+        <a href="{{$ev.subject | urlize}}">{{$ev.subject}}</a>
+        {{end}}
+        {{end}}
+        {{end}}
+        {{end}}
+        {{end}}
+    </div>
+</body>
+
+</html>

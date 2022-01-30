@@ -1,6 +1,7 @@
 ---
 title: G4 - Německý jazyk
 subject: Německý jazyk
+jsonfile: g4
 layout: subject
 summary: "Přehled všech témat pro německý jazyk v G4 popořadě:"
 ---

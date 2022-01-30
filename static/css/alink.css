@@ -1,15 +1,17 @@
 a:link, a:visited{
-	color:rgb(0, 155, 226);
+	color: var(--link-color);
 	background-color:transparent;
 	text-decoration:none;
 }
 	
 a:hover{
-	color:red;
-	background-color:transparent;text-decoration:underline;
+	color: var(--link-hover-color);
+	background-color:transparent;
+	text-decoration:underline;
 }
 
 a:active{
 	color:#6f3;
-	background-color:transparent;text-decoration:none;
+	background-color:transparent;
+	text-decoration:none;
 }

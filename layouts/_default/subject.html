@@ -17,8 +17,22 @@
 	<div class="summary">
 		{{.Params.summary}}
 	</div>
-	<div class="thelist">
-		{{.Content}}
+	<div id="listToFilter">
+		{{range $elem_key, $elem_val := .Site.Data.subjects}}
+		{{if eq (trim $elem_key " ") (trim $.Params.jsonfile " ")}}
+		{{range $ek, $ev := .}}
+		{{if eq $ek "subjects"}}
+		{{range $ek, $ev := .}}
+		{{if eq $ev.subject $.Params.subject}}
+		{{range $ev.topics}}
+		<a style="color:red" href="/topics/{{. | urlize}}">{{.}}</a>
+		{{end}}
+		{{end}}
+		{{end}}
+		{{end}}
+		{{end}}
+		{{end}}
+		{{end}}
 	</div>
 </body>
 

@@ -21,7 +21,9 @@
 		{{partial "partials/list-filter.html" . }}
 		<ul class="thelist" id="listToFilter">
 			{{ range .Data.Terms.ByCount }}
-			<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+			<a href="{{ .Page.RelPermalink }}">
+				<li><span>{{ .Page.Title }}</span> ({{ .Count }})</li>
+			</a>
 			{{ end }}
 		</ul>
 	</div>

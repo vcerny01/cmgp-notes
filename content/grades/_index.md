@@ -1,7 +1,6 @@
 ---
-layout: subject
+layout: about
 title: Ročníky
+jsonfile: [[jsonfile]]
 summary: "Přehled všech ročníků:"
 ---
-- [G4](/grades/g4)
-- [G5](/grades/g5)

@@ -23,7 +23,9 @@
         {{range $ek, $ev := .}}
         {{if eq $ek "subjects"}}
         {{range $ek, $ev := .}}
-        <a href="{{$ev.subject | urlize}}">{{$ev.subject}}</a>
+        <a href="{{$ev.subject | urlize}}">
+            <li><span>{{$ev.subject}}</span></li>
+        </a>
         {{end}}
         {{end}}
         {{end}}

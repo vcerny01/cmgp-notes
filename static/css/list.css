@@ -1,5 +1,5 @@
 body {
-	max-width: 700px;
+	max-width: 800px;
 }
 
 .summary {
@@ -9,8 +9,7 @@ body {
 #listToFilter {
 	padding-right: 1em;
 	list-style-type: none;
-	max-width: 500px;
-	border-radius: 0% 10% 10% 0%;
+	display: block;
 }
 
 #filter {
@@ -29,13 +28,23 @@ body {
 }
 
 #listToFilter li {
-	display: block;
-	max-width: 200px;
-	padding: 7px;
+	display: inline-block;
+	margin-right: 15px;
+	width: 300px;
+	padding: 8px;
 	border-left: 2px solid rgb(150, 150, 150);
 	margin-top: -2px;
-	color: var(--light-link-color);
+	color: gray;
 	background-color: var(--secondary-bg-color);
+}
+
+@media only screen and (max-width: 600px)
+{
+	#listToFilter li {
+		display: block;
+		margin-right: 0;
+		width: 90%;
+	}
 }
 
 #listToFilter li:hover{

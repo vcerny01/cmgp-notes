@@ -1,15 +1,10 @@
-<div class="column">
-	{{$i := 0}}
-	{{range .Site.Data.grades }}
-	{{$i = add $i 1 }}
-
-	<div class="gradesgroup" , id="{{$i}}" , onclick="toggleText({{$i}})">
-		<div class="gradesmin" , style="display: block;">{{.name}}</div>
-		<div style="display:none;" , class="allgrades">
+<div class="grades-menu">
+	{{range .Site.Data.grades}}
+	<div class="dropdown">
+		<div class="dropbtn">{{.name}}</div>
+		<div class="dropdown-content">
 			{{range .classes}}
-			<a href="/grades/{{lower .}}">
-				<div class="grade">{{ . }}</div>
-			</a>
+			<a href="/grades/{{. | urlize}}">{{.}}</a>
 			{{end}}
 		</div>
 	</div>

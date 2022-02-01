@@ -25,7 +25,7 @@
 		{{range $ek, $ev := .}}
 		{{if eq $ev.subject $.Params.subject}}
 		{{range $ev.topics}}
-		<a style="color:red" href="/topics/{{. | urlize}}">{{.}}</a>
+		<a style="color:red;" href="/topics/{{. | urlize}}">{{.}}</a>
 		{{end}}
 		{{end}}
 		{{end}}

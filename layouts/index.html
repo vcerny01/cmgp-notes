@@ -22,15 +22,29 @@
 			Vyberte si poznámky z <a href="https://cmgp.cz">CMGP</a> pro následující ročníky:
 		</div>
 	</section>
-	<div class="container">
-		<!-- Clickable boxes with grade -->
+	<div>
 		{{partial "home/boxes-grades.html" . }}
-		<div class="column-info">
-			{{.Content}}
+		<hr>
+		<div class="info">
+			<div>
+				<h3>Meta</h3>
+				<ul>
+					<li>Všechna <a href="/topics">témata</a></li>
+					<li>Všechny <a href="/notes">poznámky</a></li>
+					<li>Všichni <a href="/teachers">učitelé</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>FAQ</h3>
+				<ul>
+					<li><strong><a href="/about/zapojte-se">Přispějte svými poznámkami</a></strong></li>
+					<li><a href="/about/">O této stránce</a></li>
+					<li>Zdroje pro <a href="/about/samostudium">samostudium</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
-	{{partial "home/box-toggle-text.html" . }}
 </body>
 
 </html>

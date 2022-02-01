@@ -1,6 +1,6 @@
 ---
-layout: about
+layout: section
 title: Ročníky
-jsonfile: [[jsonfile]]
 summary: "Přehled všech ročníků:"
 ---
+

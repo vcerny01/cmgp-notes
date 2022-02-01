@@ -4,7 +4,6 @@ hr {
 }
 
 .info {
-	height: fit-content;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

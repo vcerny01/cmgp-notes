@@ -3,7 +3,7 @@ body {
 }
 
 .summary {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 #listToFilter {
@@ -31,26 +31,25 @@ body {
 	display: inline-block;
 	margin-right: 15px;
 	width: 300px;
-	padding: 8px;
+	padding: 10px;
 	border-left: 2px solid rgb(150, 150, 150);
 	margin-top: -2px;
 	color: gray;
 	background-color: var(--secondary-bg-color);
 }
 
-@media only screen and (max-width: 600px)
-{
+@media only screen and (max-width: 700px) {
 	#listToFilter li {
 		display: block;
 		margin-right: 0;
-		width: 90%;
+		width: 100%;
 	}
 }
 
-#listToFilter li:hover{
+#listToFilter li:hover {
 	background-color: var(--hover-bg-color);
 	/* padding: 6px 5px 6px; */
-	cursor:pointer;
+	cursor: pointer;
 	border-left-color: var(--light-link-color);
 }
 
@@ -58,11 +57,11 @@ span {
 	color: var(--light-link-color);
 }
 
-#listToFilter li:hover span{
+#listToFilter li:hover span {
 	color: var(--link-color);
 }
 
-#listToFilter li:active span{
+#listToFilter li:active span {
 	color: var(--link-hover-color);
 }
 

@@ -7,7 +7,7 @@
 	{{partial "default-style.html" .}}
 	<link rel="stylesheet" type="text/css" href="/css/list.css">
 	{{ partial "favicon.html" . }}
-	<title>{{.Params.title}}</title>
+	<title>{{.Params.title}} | Cmgp Notes</title>
 </head>
 <header>
 	<h1>{{.Params.title}}</h1>
@@ -20,7 +20,10 @@
 		<ul class="thelist" id="listToFilter">
 			{{ range .Paginator.Pages }}
 			<a href="{{ .RelPermalink }}">
-				<li><span>{{ .Title }}</span></li>
+				<li><span>{{ .Title }}</span>
+					{{range .Params.grades}} {{.}}{{end}}
+					{{range .Params.teachers}} <span style="display:none">{{.}}</span>{{end}}
+				</li>
 			</a>
 			{{ end }}
 		</ul>

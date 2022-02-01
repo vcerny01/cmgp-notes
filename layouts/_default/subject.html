@@ -17,15 +17,21 @@
 	<div class="summary">
 		{{.Params.summary}}
 	</div>
-	<div id="listToFilter">
+	{{partial "partials/list-filter.html" . }}
+	<ul class="thelist" id="listToFilter">
 		{{range $elem_key, $elem_val := .Site.Data.subjects}}
 		{{if eq (trim $elem_key " ") (trim $.Params.jsonfile " ")}}
 		{{range $ek, $ev := .}}
 		{{if eq $ek "subjects"}}
 		{{range $ek, $ev := .}}
 		{{if eq $ev.subject $.Params.subject}}
+		{{$i := 0}}
 		{{range $ev.topics}}
-		<a style="color:red;" href="/topics/{{. | urlize}}">{{.}}</a>
+		{{$i = add $i 1}}
+		<a href="/topics/{{. | urlize }}">
+			<li>{{$i}}. <span>{{ . }}</span>
+			</li>
+		</a>
 		{{end}}
 		{{end}}
 		{{end}}
@@ -33,6 +39,7 @@
 		{{end}}
 		{{end}}
 		{{end}}
+	</ul>
 	</div>
 </body>
 

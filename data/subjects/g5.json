@@ -25,11 +25,19 @@
 		},
 		{
 			"subject": "Fyzika",
-			"topics": []
+			"topics": [
+				"Fyzikální veličiny",
+				"Kinematika",
+				"Dynamika",
+				"Termodynamika"
+			]
 		},
 		{
 			"subject": "Chemie",
-			"topics": []
+			"topics": [
+				"Obecná chemie",
+				"Anorganická chemie"
+			]
 		},
 		{
 			"subject": "Informatika",
@@ -41,7 +49,15 @@
 		},
 		{
 			"subject": "Matematika",
-			"topics": []
+			"topics": [
+				"Teorie množin",
+				"Výroková logika",
+				"Teorie čísel",
+				"Mocniny a odmoncniny",
+				"Algebraické výrazy",
+				"Rovnice a nerovnice",
+				"Planimetrie"
+			]
 		},
 		{
 			"subject": "Německý jazyk",
@@ -53,11 +69,22 @@
 		},
 		{
 			"subject": "Zeměpis",
-			"topics": []
+			"topics": [
+				"Země",
+				"Obyvatelstvo",
+				"Osídlení",
+				"Hospodářství",
+				"Politická geografie",
+				"Životní prostředí"
+			]
 		},
 		{
 			"subject": "Základy společenských věd",
-			"topics": []
+			"topics": [
+				"Psychologie osobnosti",
+				"Sociální psychologie",
+				"Psychologie zdraví"
+			]
 		}
 	]
 }

@@ -21,7 +21,7 @@
 			{{ range .Paginator.Pages }}
 			<a href="{{ .RelPermalink }}">
 				<li><span>{{ .Title }}</span>
-					{{range .Params.grades}} {{.}}{{end}}
+					{{range .Params.grades}} {{.}}{{end}}, {{.Params.author}}
 					{{range .Params.teachers}} <span style="display:none">{{.}}</span>{{end}}
 				</li>
 			</a>

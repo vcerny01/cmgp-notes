@@ -1,6 +1,5 @@
 ---
-authors:
-- Martin Doušek
+author: Martin Doušek
 title: Ancient Rome
 layout: note
 date: 2022-01-25

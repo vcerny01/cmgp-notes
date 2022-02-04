@@ -7,9 +7,9 @@ body {
 }
 
 #listToFilter {
-	padding-right: 1em;
 	list-style-type: none;
 	display: block;
+	padding-inline-start: 1rem;
 }
 
 #filter {
@@ -40,6 +40,9 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+	#ListToFilter {
+		padding-inline-start: 0em;
+	}
 	#listToFilter li {
 		display: block;
 		margin-right: 0;

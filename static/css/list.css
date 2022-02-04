@@ -9,7 +9,8 @@ body {
 #listToFilter {
 	list-style-type: none;
 	display: block;
-	padding-inline-start: 1rem;
+	padding-inline-start: 0;
+	margin-left: 2rem;
 }
 
 #filter {
@@ -41,12 +42,12 @@ body {
 
 @media only screen and (max-width: 700px) {
 	#ListToFilter {
-		padding-inline-start: 0em;
+		margin-left: 0rem;
 	}
 	#listToFilter li {
 		display: block;
 		margin-right: 0;
-		width: 100%;
+		width: 95%;
 	}
 }
 

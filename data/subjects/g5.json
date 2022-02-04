@@ -11,7 +11,15 @@
 		},
 		{
 			"subject": "Český jazyk",
-			"topics": []
+			"topics": [
+				"Sloh",
+				"Literární věda",
+				"Starověká literatura",
+				"Středověká literatura",
+				"Renesance",
+				"Baroko",
+				"Klasicismus"
+			]
 		},
 		{
 			"subject": "Dějepis",

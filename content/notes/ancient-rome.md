@@ -3,6 +3,10 @@ author: Martin Doušek
 title: Ancient Rome
 layout: note
 date: 2022-01-25
+subject: Dějepis
+grades:
+- G5
+- G6
 topics:
 - Antika
 - Starověk

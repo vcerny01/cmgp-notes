@@ -1,0 +1,56 @@
+- grade: G1
+  subjects:
+    - Anglický jazyk
+    - Biologie
+    - Český jazyk
+    - Dějepis
+    - Fyzika
+    - Chemie
+    - Informatika
+    - Matematika
+    - Německý jazyk
+    - Zeměpis
+    - Základy společenských věd
+- grade: G2
+  subjects:
+    - Anglický jazyk
+    - Biologie
+- grade: G4
+  subjects:
+    -
+- grade: G5
+  subjects:
+    -
+- grade: G6
+  subjects:
+    -
+- grade: G7
+  subjects:
+    -
+- grade: G8
+  subjects:
+    -
+- grade: PL1
+  subjects:
+    -
+- grade: PL2
+  subjects:
+    -
+- grade: PL3
+  subjects:
+    -
+- grade: PL4
+  subjects:
+    -
+- grade: PMP1
+  subjects:
+    -
+- grade: PMP2
+  subjects:
+    -
+- grade: PMP3
+  subjects:
+    -
+- grade: PMP4
+  subjects:
+    -

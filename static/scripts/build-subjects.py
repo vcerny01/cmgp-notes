@@ -3,7 +3,6 @@
 
 import os
 import json
-from re import template
 
 PROJECT_DIR = os.path.join(os.getenv("HOME"), "Repos", "cmgp-notes")
 JSON_DIR = os.path.join(PROJECT_DIR, "data", "subjects")

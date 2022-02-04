@@ -1,6 +1,6 @@
 ---
-title: PMP1 - Anglický jazyk
+title: G3 - Anglický jazyk
 subject: Anglický jazyk
 layout: subject
-grade: PMP1
+grade: G3
 ---

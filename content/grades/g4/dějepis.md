@@ -1,6 +1,6 @@
 ---
-title: G1 - Dějepis
+title: G4 - Dějepis
 subject: Dějepis
 layout: subject
-grade: G1
+grade: G4
 ---

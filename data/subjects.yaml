@@ -15,12 +15,17 @@
   subjects:
     - Anglický jazyk
     - Biologie
+- grade: G3
+  subjects:
+    - Anglický jazyk
 - grade: G4
   subjects:
     - Anglický jazyk
+    - Dějepis
 - grade: G5
   subjects:
     - Anglický jazyk
+    - Dějepis
 - grade: G6
   subjects:
     - Anglický jazyk

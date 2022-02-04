@@ -14,8 +14,7 @@ grades:
 - G5
 - G6
 math: true
-teachers:
-- Marek Štěpánek
+teacher: Marek Štěpánek
 ---
 
 ## Vznik Říma

@@ -19,21 +19,15 @@
 	</div>
 	{{partial "partials/list-filter.html" . }}
 	<ul class="thelist" id="listToFilter">
-		{{range $elem_key, $elem_val := .Site.Data.subjects}}
-		{{if eq (trim $elem_key " ") (trim $.Params.jsonfile " ")}}
-		{{range $ek, $ev := .}}
-		{{if eq $ek "subjects"}}
-		{{range $ek, $ev := .}}
-		{{if eq $ev.subject $.Params.subject}}
-		{{$i := 0}}
-		{{range $ev.topics}}
-		{{$i = add $i 1}}
-		<a href="/topics/{{. | urlize }}">
-			<li>{{$i}}. <span>{{ . }}</span>
-			</li>
-		</a>
-		{{end}}
-		{{end}}
+		{{range (where .Site.Pages "Section" "notes")}}
+		{{range .Pages}}
+		{{$note := .Page.Params}}
+		{{$permalink := .Page.Permalink}}
+		{{if eq $note.subject $.Params.subject}}
+		{{range $note.grades}}
+		{{if eq . $.Params.grade}}
+		<a href="{{$permalink}}"><li>
+			<span>{{$note.title}}</span><span style="display:none">{{$note.teacher}}</span>&ensp; {{$note.author}}</li></a>
 		{{end}}
 		{{end}}
 		{{end}}

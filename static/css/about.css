@@ -2,3 +2,13 @@ article {
     padding: 0px 1em 0px;
     max-width: 900px;
 }
+
+li {
+    margin: 7px;
+}
+
+table, th, td {
+    border: 1px var(--border-color) solid;
+    padding: 5px;
+}
+

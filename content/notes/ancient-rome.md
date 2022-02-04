@@ -1,5 +1,6 @@
 ---
-author: Martin Doušek
+authors:
+- Martin Doušek
 title: Ancient Rome
 layout: note
 date: 2022-01-25
@@ -10,11 +11,9 @@ grades:
 topics:
 - Antika
 - Starověk
-grades:
-- G5
-- G6
 math: true
-teacher: Marek Štěpánek
+teachers:
+- Marek Štěpánek
 ---
 
 ## Vznik Říma
@@ -25,7 +24,7 @@ teacher: Marek Štěpánek
 - $\frac{20}{3x}$
 - pravděpodobně vznikal postupně
 - po odvodnění oblasti Etrusky období rozmachu
-
+ 
 
 ## Doba královská
 - společnost rozdělena na kmeny (pravěký způsob)

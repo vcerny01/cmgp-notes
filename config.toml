@@ -4,6 +4,10 @@ title = "Cmgp Notes"
 defaultContentLanguage = "cz"
 [params]
   description = "Sdílení poznámek a zdrojů ke studiu"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [taxonomies]
   topic = "topics"
   author = "authors"

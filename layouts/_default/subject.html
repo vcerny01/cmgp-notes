@@ -22,7 +22,7 @@
 		{{range (where .Site.Pages "Section" "notes")}}
 		{{range .Pages}}
 		{{$note := .Page.Params}}
-		{{$permalink := .Page.Permalink}}
+		{{$permalink := .Page.RelPermalink}}
 		{{if eq $note.subject $.Params.subject}}
 		{{range $note.grades}}
 		{{if eq . $.Params.grade}}

@@ -2,6 +2,7 @@
 
 import os
 import yaml
+import shutil
 
 DATA_PATH = os.path.join("data", "subjects.yaml")
 GRADES_DIR = os.path.join("content", "grades")
@@ -11,6 +12,8 @@ TEMPALATE_GRADE_PATH = os.path.join("static", "templates", "grade-index.md")
 
 def urlize(name: str):
     """urlize name as hugo does"""
+    if not name:
+        return ""
     return name.lower().replace(" ", "-")
 
 
@@ -23,10 +26,8 @@ def replace_with_dict(text: str, terms: dict):
 
 def cleanup(grades_dir: str):
     """delete all files in grades dir to"""
-    if not (os.path.isdir(grades_dir)):
-        os.mkdir(grades_dir)
-    for file in [f for f in os.listdir(grades_dir)]:
-        os.remove(os.path.join(grades_dir, file))
+    shutil.rmtree(grades_dir)
+    os.mkdir(grades_dir)
 
 
 def build_subjects(data: dict, grades_dir: str):
@@ -57,5 +58,6 @@ def build_subjects(data: dict, grades_dir: str):
 
 if __name__ == "__main__":
     yaml_data = yaml.safe_load(open(DATA_PATH))
+    print(yaml_data, type(yaml_data))
     cleanup(GRADES_DIR)
     build_subjects(yaml_data, GRADES_DIR)

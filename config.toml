@@ -1,4 +1,4 @@
-baseUrl = "cmgp-notes.netlify.app" # cmgpnotes.cz later
+baseUrl = "https://cmgp-notes.netlify.app" # cmgpnotes.cz later
 languageCode = "cs-cz"
 title = "Cmgp Notes"
 defaultContentLanguage = "cz"

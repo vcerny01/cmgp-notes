@@ -14,8 +14,7 @@ teachers:
 math: true
 ---
 
-
-
+TODO Vyřešit tabulky konvertování Roam tabulek do markdown tabulek
 
 ## Výrok  
   - Je každé tvrzení , o kterém má smysl (popř. je možno) prohlásit, zda je či není pravdivé  
@@ -25,21 +24,21 @@ math: true
     - $1$ je pravda  
 
 ## Negace výroku  
-  - Negace výrokuje výrok, který vylučuje platnost výroku (má opačnou pravdivostní hodnotu)  
-  - Negaci výroku $v$ označujeme $\neg v$  
-    - pokud $p(x) = 1$, potom $p(\neg x) = 0$  
-  - _Aspoň_, _nejvýše_ a jejich negace  
-    - Řekneme-li, že nějaká množina má aspoň k prvků, znamená to, že počet jejích prvků je větší nebo roven číslu $k$  
-      - $p(v)$ – Množina M má aspoň k prvků.  
-      - $p(\neg v)$ – Množina M má nejvýše k − 1 prvků.  
-    - Řekneme-li, že nějaká množina má nejvýše k prvků, znamená to, že počet jejích prvků je menší nebo roven číslu $k$  
-      - $p(u)$ – Množina $M$ má nejvýše $k$ prvků.  
-      - $p(\neg u)$ – Množina $M$ má aspoň $k + 1$ prvků.  
-    - Příklady  
-      - `Ve třídě je aspoň 33 studentů`  
-        - Negace: `Ve třídě je nanejvýš 32 studentů`  
-      - `Do kina přijde nanejvýš 150 diváků`  
-        - Negace: `Do kina přijde aspoň 151 diváků`  
+- Negace výrokuje výrok, který vylučuje platnost výroku (má opačnou pravdivostní hodnotu)  
+- Negaci výroku $v$ označujeme $\neg v$  
+  - pokud $p(x) = 1$, potom $p(\neg x) = 0$  
+- _Aspoň_, _nejvýše_ a jejich negace  
+  - Řekneme-li, že nějaká množina má aspoň k prvků, znamená to, že počet jejích prvků je větší nebo roven číslu $k$  
+    - $p(v)$ – Množina M má aspoň k prvků.  
+    - $p(\neg v)$ – Množina M má nejvýše k − 1 prvků.  
+  - Řekneme-li, že nějaká množina má nejvýše k prvků, znamená to, že počet jejích prvků je menší nebo roven číslu $k$  
+    - $p(u)$ – Množina $M$ má nejvýše $k$ prvků.  
+    - $p(\neg u)$ – Množina $M$ má aspoň $k + 1$ prvků.  
+  - Příklady  
+    - `Ve třídě je aspoň 33 studentů`  
+      - Negace: `Ve třídě je nanejvýš 32 studentů`  
+    - `Do kina přijde nanejvýš 150 diváků`  
+       - Negace: `Do kina přijde aspoň 151 diváků`  
 
 ## Složené výroky  
   - **Konjunkce**  
@@ -120,7 +119,8 @@ math: true
           - **1**  
     - Logická spojka _jestliže tehdy_, _když_  
 
-## Negace složených výroků
+### Negace složených výroků
+- {{table}}
     - **Výrok**  
       - **Negace výroku**  
         - **Tautologie negace**  

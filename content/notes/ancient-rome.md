@@ -1,7 +1,7 @@
 ---
 authors:
 - Martin Doušek
-title: Ancient Rome
+title: Antický Řím
 layout: note
 date: 2022-01-25
 subject: Dějepis

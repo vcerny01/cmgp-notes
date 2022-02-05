@@ -28,7 +28,11 @@
 			<div>
 				<h3>Nově přidané poznámky</h3>
 				<ul>
-					<li>TODO</li>
+					{{range (where .Site.Pages "Section" "notes")}}
+					{{range .Pages.ByDate.Reverse}}
+					<li>{{.Page.Date.Format "2.1. 2006"}} - <a href="{{.RelPermalink}}">{{.Page.Params.title}}</a></li>
+					{{end}}
+					{{end}}
 				</ul>
 			</div>
 			<div>

@@ -3,7 +3,7 @@ authors:
 - Vít Černý
 title: Výroková logika
 layout: note
-date: 2022-02-05
+date: 2022-02-04
 subject: Matematika
 grades:
 - G5

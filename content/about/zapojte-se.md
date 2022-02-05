@@ -11,12 +11,12 @@ Přispějte svými poznámkami na tyto stránky! je to poměrně lehké, postupu
      - Pokud bychom začali přijímat ofocené sešity a jednoduše by jsme hostovali fotky poznámek, ztratila by existence tohoto webu do značné části smysl (protože ofocené poznámky ztrácejí hypertextový potenciál)
        - Pro tento účel existují lepší služby, např. Google Drive
      - <u>Doporučený postup</u>
-       - Bohužel nemáme prostředky na to přepisovat všechny poslané poznámky
+       - Bohužel nemáme prostředky na to přepisovat všechny ofocené poznámky
        - Doporučujeme tedy, abyste své poznámky jednoduše přepsali do jakéhokoliv digitálního média
    - **PDF (/DJVU,...)**
      - Většinou bývájí exportované z nějakého jiného formátu
        - Pokud tento původní soubor máte, postupujte podle tohoto manuálu s ním
-       - Pokud ho nemáte, nevadí, postupujte dál v tomto manuálu i s ním
+       - Pokud ho nemáte, nevadí
    - **WISYWIG formáty (Word, Google Docs...)**
      - V pořádku (můžete pokračovat k dalšímu kroku)
        - Nicméně z naší zkušenosti doporučujeme používat dedikovanou [aplikaci](https://collegeinfogeek.com/best-note-taking-apps/) na poznámky (ideálně pokud má možnost exportu do  [markdownu](https://medium.com/new-writers-welcome/writers-free-yourselves-with-markdown-107a21f78a80))
@@ -37,3 +37,13 @@ Přispějte svými poznámkami na tyto stránky! je to poměrně lehké, postupu
 | Obsahuje matematiku | Obsahuje vaše poznámka matematiku (ano/ne)                                               | Ano              |
 | Témata              | Témata v rámci předmětu, kterých se poznámka týká (např.: antika nebo organická chemie)  | Ne               |
 
+
+3. FAQ
+   - Obrázky
+     - Žádný problém, buď jsou přímo v souboru vaší poznámky nebo je přiložte k němu
+   - Pracovní listy
+     - Vyfoťte nebo jakkoliv přiložte k souboru, my si s nimi poradíme
+     <span style="display:none">Pracovní listy musí být zničeny</span>
+4. Odeslání souborů na jeden z komunikačních kanálů
+   - Email
+   - G Drive

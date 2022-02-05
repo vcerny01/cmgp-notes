@@ -8,9 +8,7 @@
     - Chemie
     - Informatika
     - Matematika
-    - Německý jazyk
     - Zeměpis
-    - Základy společenských věd
 - grade: G2
   subjects:
     - Anglický jazyk
@@ -25,7 +23,15 @@
 - grade: G5
   subjects:
     - Anglický jazyk
+    - Biologie
+    - Český jazyk
     - Dějepis
+    - Fyzika
+    - Chemie
+    - Informatika
+    - Matematika
+    - Zeměpis
+    - Základy společenských věd
 - grade: G6
   subjects:
     - Anglický jazyk

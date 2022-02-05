@@ -27,7 +27,7 @@
 		{{range $note.grades}}
 		{{if eq . $.Params.grade}}
 		<a href="{{$permalink}}"><li>
-			<span>{{$note.title}}</span><span style="display:none">{{$note.teacher}}</span>&ensp; {{$note.author}}</li></a>
+			<span>{{$note.title}}</span><span style="display:none">{{$note.teacher}}</span>&ensp; {{range $note.authors}}{{.}}{{end}}</li></a>
 		{{end}}
 		{{end}}
 		{{end}}

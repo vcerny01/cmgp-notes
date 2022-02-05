@@ -4,11 +4,10 @@ article {
 }
 
 li {
-    margin: 7px;
+    margin: 7px 0 7px;
 }
 
 table, th, td {
     border: 1px var(--border-color) solid;
     padding: 5px;
 }
-

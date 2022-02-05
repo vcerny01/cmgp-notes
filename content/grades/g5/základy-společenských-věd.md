@@ -1,6 +1,6 @@
 ---
-title: G1 - Základy společenských věd
+title: G5 - Základy společenských věd
 subject: Základy společenských věd
 layout: subject
-grade: G1
+grade: G5
 ---

@@ -46,6 +46,7 @@ hr {
 	color: var(--light-link-color);
 	padding: 16px;
 	font-size: 16px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 

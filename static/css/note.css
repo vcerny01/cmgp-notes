@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
-	margin-bottom: 50px;
+	margin-bottom: 2rem;
 }
 
 .meta{
@@ -11,20 +11,21 @@
 	border-top: 3px var(--secondary-bg-color) solid;
 	border-bottom: 3px var(--secondary-bg-color) solid;
 	width: fit-content;
-	border-radius: 1%;
 	padding: 15px;
 	margin: 10px;
+	margin-right: 5rem;
 }
 
 .toc {
 	border-radius: 2%;
 	background-color: var(--secondary-bg-color);
-	margin: 10px;
 	padding: 10px 70px 10px;
 	padding-left: 0;
-	width: fit-content;
+	margin-top: 30px;
+	height: fit-content;
 	width: fit-content;
 }
+
 
 .toc li {
 	padding-bottom: 3px;
@@ -48,7 +49,20 @@ article {
 }
 
 @media only screen and (max-width: 700px) {
+	.meta-container {
+		margin: auto 10vw auto;
+	}
+	.toc, .meta {
+		margin: 0%;
+		width: 100%;
+	}
+	.meta {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
 	.toc {
 		margin-left: 0px;
-	}	
+		display: flex;
+		justify-content: center;
+	}
 }
